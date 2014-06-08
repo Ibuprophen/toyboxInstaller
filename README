@@ -1,0 +1,51 @@
+This is an Android installer for Rob Landley's toybox.
+
+http://landley.net/code/toybox/
+
+
+Design.
+=======
+
+My initial design thoughts are to download a recent binary of toybox
+from Rob's web site that is suitable for what ever CPU we are running
+on.
+
+http://landley.net/code/toybox/bin/
+
+Then provide a list of the folders in the current PATH, so the user can
+select where to install it.  Likely root will be needed, though I think
+there are non root ways of running things like toybox.  I dunno yet if
+access to the PATH is possible, or the CPU type.  We shall see.
+
+A fall back option is to use some sort of directory picker.
+
+
+About the logo.
+===============
+
+After some discussion on the mailing list about a suitable logo, Rob
+mentioned that he would love to get the rights to use the image from -
+
+http://www.dorodango.com/about.html
+
+Bruce Gardner was gracious enough to give us the rights to use that
+image for the toybox logo.  So the Placitas_Green_pillow.jpg image, and
+all derivations of it, are used with permission from Bruce Gardner. 
+Thank you Bruce.
+
+
+Authors.
+========
+
+Rob Landley is the creator and maintainer of toybox, and many people
+have contributed to toybox (see details on the toybox website above).
+
+David Seikel is the author of this toyboxInstaller app for Android.
+
+
+License.
+========
+
+ToyboxInstaller is licensed under the same BSD style license that toybox
+is licensed under.  See the toybox web site above for details.
+
