@@ -1,6 +1,13 @@
-This is an Android installer for Rob Landley's toybox.
+This is an Android installer for Rob Landley's toybox.  Toybox combines
+common Linux command line utilities together into a single BSD-licensed
+executable that's simple, small, fast, reasonably standards-compliant,
+and powerful enough to turn Android into a development environment.
 
 http://landley.net/code/toybox/
+
+In general I'll follow toybox's version number, even if there is no need
+to change this code.  Currently that's 0.4.8.  If I ever have to change
+the code between toybox versions, I'll add another point.
 
 
 Design.
@@ -10,14 +17,19 @@ My initial design thoughts are to download a recent binary of toybox
 from Rob's web site that is suitable for what ever CPU we are running
 on.
 
-http://landley.net/code/toybox/bin/
+http://landley.net/code/toybox/downloads/binaries/
+
+java.lang.System.getProperty("os.arch"); returns things like "armv7l". 
+Currently the latests toybox binaries download only provides ARM 4, 5,
+and 6 versions.  So would need some massaging to get the closest match.
 
 Then provide a list of the folders in the current PATH, so the user can
 select where to install it.  Likely root will be needed, though I think
-there are non root ways of running things like toybox.  I dunno yet if
-access to the PATH is possible, or the CPU type.  We shall see.
+there are non root ways of running things like toybox.
 
-A fall back option is to use some sort of directory picker.
+A fall back option is to use some sort of directory picker.  Might just
+provide that anyway, for extra flexibility.  One more option might be to
+allow a choice of versions to install.
 
 
 About the logo.
@@ -32,6 +44,12 @@ Bruce Gardner was gracious enough to give us the rights to use that
 image for the toybox logo.  So the Placitas_Green_pillow.jpg image, and
 all derivations of it, are used with permission from Bruce Gardner. 
 Thank you Bruce.
+
+Original image size is 176x176, Android requires MDPI 48x48, HDPI 72x72,
+XHDPI 96x96, XXHDPI 144x144, XXXHDPI 192x192, and Google Play logo at
+512x512.  LDPI is also supported, but that gets the HDPI scaled down to
+36x36 automatically.  Actually Android in general takes what it has and
+tries to scale it as best it can.  Cropping it to 144 works OK.
 
 
 Authors.
@@ -48,4 +66,3 @@ License.
 
 ToyboxInstaller is licensed under the same BSD style license that toybox
 is licensed under.  See the toybox web site above for details.
-

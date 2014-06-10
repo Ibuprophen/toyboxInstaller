@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">toyboxInstaller</string>
+    <string name="hello">
+This app is used for installing Rob Landley\'s toybox.  
+Toybox combines common Linux command line utilities together 
+into a single BSD-licensed executable that\'s simple, small, fast, 
+reasonably standards-compliant, and powerful enough to turn 
+Android into a development environment.\n\n</string>
+    <string name="version">The currently installed toybox version is</string>
+    <string name="cpu">The CPU type here is</string>
+    <string name="path">Select where you want to install toybox\n\nfrom the PATH -\n</string>
+    <string name="folder">or into a folder -\n</string>
+    <string name="button_install">Install toybox.</string>
+
+</resources>
