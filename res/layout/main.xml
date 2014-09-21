@@ -15,6 +15,16 @@
         android:layout_height="wrap_content"
         android:text="@string/version" />
 
+		<TextView android:id="@+id/versionsPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/versionsPrompt" />
+
+		<Spinner android:id="@+id/versions"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:prompt="@+id/versionsPrompt" />
+
     <TextView android:id="@+id/cpu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,6 +34,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/path" />
+
+		<TextView android:id="@+id/pathsPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pathsPrompt" />
+
+		<Spinner android:id="@+id/paths"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:prompt="@+id/pathsPrompt" />
 
     <TextView android:id="@+id/folder"
         android:layout_width="wrap_content"
@@ -36,4 +56,13 @@
         android:text="@string/button_install"
         android:onClick="installToybox" />
 
+		<TextView android:id="@+id/source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/source" />
+
+		<TextView android:id="@+id/destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/destination" />
 </LinearLayout>

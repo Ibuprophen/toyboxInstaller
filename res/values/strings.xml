@@ -3,15 +3,28 @@
 
     <string name="app_name">toyboxInstaller</string>
     <string name="hello">
-This app is used for installing Rob Landley\'s toybox.  
-Toybox combines common Linux command line utilities together 
-into a single BSD-licensed executable that\'s simple, small, fast, 
-reasonably standards-compliant, and powerful enough to turn 
-Android into a development environment.\n\n</string>
+This app is used for installing Rob Landley\'s toybox.\n\n\"Toybox combines common Linux command line utilities together into a single BSD-licensed executable that\'s simple, small, fast, reasonably standards-compliant, and powerful enough to turn Android into a development environment.\"\n\nAt least that\'s Rob\'s plan, toybox is not yet feature complete.\n\n</string>
     <string name="version">The currently installed toybox version is</string>
-    <string name="cpu">The CPU type here is</string>
-    <string name="path">Select where you want to install toybox\n\nfrom the PATH -\n</string>
-    <string name="folder">or into a folder -\n</string>
+		<string name="versionsPrompt">Select a version to install:-</string>
+ 		<string-array name="versions">
+				<item>latest</item>
+				<item>0.3.0</item>
+				<item>0.3.1</item>
+				<item>0.4.0</item>
+				<item>0.4.1</item>
+				<item>0.4.2</item>
+				<item>0.4.3</item>
+				<item>0.4.5</item>
+				<item>0.4.6</item>
+				<item>0.4.7</item>
+				<item>0.4.8</item>
+				<item>0.4.9</item>
+		</string-array>
+		<string name="cpu">The CPU type here is</string>
+    <string name="path">Select where you want to install toybox ...\n</string>
+		<string name="pathsPrompt">... into the $PATH :-\n</string>
+    <string name="folder">... or into a folder :-\n</string>
     <string name="button_install">Install toybox.</string>
-
+    <string name="source">Install from</string>
+		<string name="destination">Install to</string>
 </resources>
