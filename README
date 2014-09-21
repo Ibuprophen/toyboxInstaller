@@ -6,7 +6,7 @@ and powerful enough to turn Android into a development environment.
 http://landley.net/code/toybox/
 
 In general I'll follow toybox's version number, even if there is no need
-to change this code.  Currently that's 0.4.8.  If I ever have to change
+to change this code.  Currently that's 0.4.9.  If I ever have to change
 the code between toybox versions, I'll add another point.
 
 
