@@ -1,73 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:gravity="center"
-    android:orientation="vertical" >
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:gravity="center"
+  android:orientation="vertical" >
 
-    <TextView android:id="@+id/hello"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello" />
+  <TextView android:id="@+id/hello"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/hello" />
 
-    <TextView android:id="@+id/version"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/version" />
+  <TextView android:id="@+id/version"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/version" />
 
-		<TextView android:id="@+id/versionsPrompt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/versionsPrompt" />
+  <TextView android:id="@+id/versionsPrompt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/versionsPrompt" />
 
-		<Spinner android:id="@+id/versions"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:prompt="@+id/versionsPrompt" />
+  <Spinner android:id="@+id/versions"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:prompt="@+id/versionsPrompt" />
 
-    <TextView android:id="@+id/cpusPrompt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/cpusPrompt" />
+  <TextView android:id="@+id/cpusPrompt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/cpusPrompt" />
 
-    <Spinner android:id="@+id/cpus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-				android:prompt="@+id/cpusPrompt" />
+  <Spinner android:id="@+id/cpus"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:prompt="@+id/cpusPrompt" />
 
-    <TextView android:id="@+id/path"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/path" />
+  <TextView android:id="@+id/path"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/path" />
 
-		<TextView android:id="@+id/pathsPrompt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/pathsPrompt" />
+  <TextView android:id="@+id/pathsPrompt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/pathsPrompt" />
 
-		<Spinner android:id="@+id/paths"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:prompt="@+id/pathsPrompt" />
+  <Spinner android:id="@+id/paths"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:prompt="@+id/pathsPrompt" />
 
-    <TextView android:id="@+id/folder"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/folder" />
+  <TextView android:id="@+id/folder"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/folder" />
 
-    <Button android:id="@+id/install"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_install"
-        android:onClick="installToybox" />
+  <Button android:id="@+id/install"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/button_install"
+    android:onClick="installToybox" />
 
-		<TextView android:id="@+id/source"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/source" />
+  <TextView android:id="@+id/source"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/source" />
 
-		<TextView android:id="@+id/destination"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/destination" />
+  <TextView android:id="@+id/destination"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/destination" />
 </LinearLayout>
