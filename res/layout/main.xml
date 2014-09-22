@@ -25,10 +25,15 @@
 				android:layout_height="wrap_content"
 				android:prompt="@+id/versionsPrompt" />
 
-    <TextView android:id="@+id/cpu"
+    <TextView android:id="@+id/cpusPrompt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/cpu" />
+        android:text="@string/cpusPrompt" />
+
+    <Spinner android:id="@+id/cpus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+				android:prompt="@+id/cpusPrompt" />
 
     <TextView android:id="@+id/path"
         android:layout_width="wrap_content"
