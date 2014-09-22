@@ -10,7 +10,7 @@ import android.speech.*;
 
 public class MainActivity extends Activity implements AdapterView.OnItemSelectedListener
 {
-  private String requstedVersion = "latest";
+  private String requestedVersion = "latest";
   private String requestedCPU = "";
   private String requestedPath = "";
 
@@ -75,7 +75,7 @@ public class MainActivity extends Activity implements AdapterView.OnItemSelected
     {
       case R.id.versions :
       {
-	requstedVersion = s;
+	requestedVersion = s;
 	break;
       }
 
@@ -91,7 +91,7 @@ public class MainActivity extends Activity implements AdapterView.OnItemSelected
 	break;
       }
     }
-    source.setText(SOURCE + " http://landley.net/code/toybox/downloads/binaries/" + requstedVersion + "/toybox-" + requestedCPU + "\n");
+    source.setText(SOURCE + " http://landley.net/code/toybox/downloads/binaries/" + requestedVersion + "/toybox-" + requestedCPU + "\n");
     destination.setText(DESTINATION + " " + requestedPath + "\n");
   }
 
@@ -103,14 +103,15 @@ public class MainActivity extends Activity implements AdapterView.OnItemSelected
 
   public void installToybox(View view)
   {
-    String url = "http://landley.net/code/toybox/downloads/binaries/" + requstedVersion + "/toybox-" + requestedCPU;
+    String url = "http://landley.net/code/toybox/downloads/binaries/" + requestedVersion + "/toybox-" + requestedCPU;
     DownloadManager.Request request = new DownloadManager.Request(Uri.parse(url));
     DownloadManager manager = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
 
-    request.setDescription("toybox v" + requstedVersion + " for " + requestedCPU);
+		Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).mkdirs();
+    request.setDescription("v " + requestedVersion + " CPU " + requestedCPU);
     request.setTitle("toybox");
     request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
-    request.setDestinationInExternalFilesDir(this, Environment.DIRECTORY_DOWNLOADS, requstedVersion + "/toybox-" + requestedCPU);
+    request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "toybox-" + requestedCPU + "-" + requestedVersion);
     manager.enqueue(request);
   }
 }
